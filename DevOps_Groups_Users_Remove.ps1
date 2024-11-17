@@ -116,11 +116,11 @@ function DeleteGroups($organization, $project)
     }
 }
 
-[string]$sourceOrganization = 'https://dev.azure.com/basf4dev'
-[string]$sourceProject = 'trinamiXExternal'
+[string]$sourceOrganization = 'https://dev.azure.com/{sourceOrganization}'
+[string]$sourceProject = '{sourceProject}'
 
-[string]$destOrganization = "https://dev.azure.com/trinamiX/"
-[string]$destProject = 'trinamiXImaging_TestPlan'
+[string]$destOrganization = "https://dev.azure.com/{destOrganization}/"
+[string]$destProject = '{destProject}'
 
 #ExportUsers -sourceOrg $sourceOrganization -sourceProject $sourceProject -targetOrganization $destOrganization -targetProject $destProject
 #DeleteGroups -organization $destOrganization -project $destProject
